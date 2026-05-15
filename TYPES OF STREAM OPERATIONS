@@ -1,0 +1,54 @@
+TYPES OF STREAM OPERATIONS
+1. Intermediate Operations
+2. Terminal Operations
+
+            INTERMEDIATE OPERATIONS IN STREAM
+- Intermediate Operations: Lazy,  Transform , Filter, Chain
+
+- Intermediate Operations List (Commonly used);
+    . filter() : This method filters elements based on a condition
+    . map() : It transforms each elements into something else.
+    . flatMap() : Used to flatten multiple collections into a single stream
+    . distinct() : Removes duplicates from the stream
+    . sorted() : Sorts the elements in the stream
+    . peek() : Performs an action for each element (usually for debugging)
+    . limit() : Limits the number of  elements in the stream
+    . skip() : Skips the first N elements in the stream
+
+
+            TERMINAL OPERATIONS IN STREAMS
+- Terminal Operations : Trigger Execution
+
+- Terminal Operations List (Commonly used):
+    . collect() : Collects the elements of the stream into a collection (like a List, Set, or Map)
+    . forEach() : Performs an action for each element in the stream
+    . reduce() : Reduces the elements of the stream to a single value (like summing numbers)
+    . count() : Counts the number of elements match a condition
+    . anyMatch() : Checks if any elements match a condition
+    . allMatch() : Checks if all the elements match a condition
+    . noneMatch() : Checks if none of the elements match a condition
+    . findFirst() : Returns the first element in the stream
+    . findAny() : Returns any element from the stream (mainly useful in parallel streams)
+
+
+            STREAM INTERMEDIATE VS TERMINAL OPERATIONS
+INTERMEDIATE OPERATIONS               -   TERMINAL OPERATIONS
+1. They return stream                 -   They return non-stream values
+
+2. They can be chained together to    -   They can't be chained together
+form a pipeline of operation
+
+3. Pipeline of operations may contain -   Pipeline of operations can have maximum one
+any number of intermediate operations     terminal operation, that too at the end.
+
+4. Intermediate operations are lazily  -   Terminal operations are eagerly loaded
+loaded
+
+5. They don't produce end result       -    They produce end result
+
+6. Examples:                           -    Example:
+filter(), map(), distinct(), sorted()       forEach(), toArray(), reduce(), collect()
+limit(), skip()                             min(), max(), count(), anyMatch(), allMatch()
+                                            nonMatch(), findFirst(), findAny()
+
+

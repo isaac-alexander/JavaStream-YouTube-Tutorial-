@@ -1,0 +1,25 @@
+            STREAMS
+
+- A Stream is a sequence of data elements for processing
+- It allows you to perform data processing operations such as filtering, mapping, and reducing on a collection of data.
+- Streams can be used with various data sources, including arrays collections (List, Set, and Map), and even I/O channels.
+
+WHY USE STREAMS?
+
+. Streams makes code simple and readable.
+. Streams allow you to process large data efficiently.
+
+HOW ARE STREAMS DIFFERENT FROM COLLECTIONS?
+
+COLLECTIONS                 -               STREAMS
+
+1. Collections are used to store date   -   Streams process data.
+2. Collections can be reused        -       Streams are one-time use.
+3. Collection: eager loading        -       Streams: lazy loading
+4. Collections: imperative style    -       Streams: functional style
+5. Collections allow modifications  -       Streams are read-only
+
+KEY FEATURES OF JAVA STREAMS
+- Streams are not data structures
+- Streams are lazy
+- Streams are read-only

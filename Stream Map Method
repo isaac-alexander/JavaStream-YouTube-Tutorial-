@@ -1,0 +1,7 @@
+- The map() method is used to apply a function to each element in the stream and return a new stream with the transformed data.
+
+- The map() method is an intermediate operation in Java Stream.
+As map method returns new Stream so we can chain the methods.
+Example: listOfStrings.stream().map(Integer::valueOf).collect(Collectors.toList());
+
+- It's commonly used to convert objects, modify data, or extract specific fields from complex objects.
