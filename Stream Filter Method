@@ -1,0 +1,10 @@
+Filtering Streams with filter()
+
+- The filter() method is used to select elements from a stream based on a condition
+
+- The filter() method is an intermediate operation in Java stream
+
+- It takes a condition, also called a predicate, and returns a new stream containing only the elements that satisfy that condition.
+
+- filter() method returns new Stream so we can chain the methods
+

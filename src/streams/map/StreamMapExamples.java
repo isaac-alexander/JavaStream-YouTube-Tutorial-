@@ -12,7 +12,10 @@ public class StreamMapExamples {
         List<String> fruits = Arrays.asList("Apple", "Banana", "Mango");
 
         Stream<String> stream = fruits.stream();
-         List<String> list = stream.map((element) -> element.toUpperCase())
+         List<String> list = stream
+                 .peek((element) -> System.out.println("Before map() method: " + element))
+                 .map((element) -> element.toUpperCase())
+                 .peek((element) -> System.out.println("After map() method: " + element))
                 .toList();
         System.out.println(list);
     }
